@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio</title>
+	<script language="Javascript" src="ejercicio.js"></script>
+</head>
+<body>
+	<div id="busqueda">
+	<h1>BUSQUEDA</h1>
+    <p>DNI:<input type="text" name="dniS"><button onclick="buscar()">BUSCAR</button><button onclick="mostrarOcultar(true)">MOSTRAR</button><button onclick="mostrarOcultar(false)">OCULTAR</button>
+	</div>
+	
+	<div id="resultado" style="display:none;"><!-- block none -->
+	Resultado:
+	<table border="1px">
+	<tr>
+	<td>Nombres:</td>	<td><input id="nombreSearch"></td>
+	</tr><tr>
+	<td>Apellidos</td>	<td><input id="apellidoSearch"></td>
+	</tr><tr>
+	<td>DNI</td>		<td><input id="dniSearch"></td>
+	</table>
+	
+	</div>
+	
+	<table border=0>
+	<tr>
+	<td><div id="reservaPasajes">
+ 	<h1>RESERVA DE PASAJES</h1>
+    <p><strong>Nombre:</strong><input type="text" name="nombre"></p>
+
+    <p><strong>Apellido:</strong><input type="text" name="apellido"></p>
+
+    <p><strong>DNI:<strong><input type="text" name="dni"></p>
+
+
+    <button id="Breservar" onclick="reservar()"> RESERVAR</button>
+    <button id = "Bmostrar" onclick="mostrar()">  MOSTRAR </button>
+	<button id="Beliminar" onclick="eliminar()">ELIMINAR</button>
+	</div></td>
+	<td>
+	<div id="tabla">
+	<table border="4px" align = "center">
+		<tr>
+			<td><a href="#" onclick="cambiarAsiento(3);">4</a></td>
+			<td><a href="#" onclick="cambiarAsiento(7);">8</a></td>
+			<td><a href="#" onclick="cambiarAsiento(11);">12</a></td>
+			<td><a href="#" onclick="cambiarAsiento(15);">16</a></td>
+			<td><a href="#" onclick="cambiarAsiento(19);">20</a></td>
+			<td><a href="#" onclick="cambiarAsiento(23);">24</a></td>
+			<td><a href="#" onclick="cambiarAsiento(27);">28</a></td>
+			<td><a href="#" onclick="cambiarAsiento(31);">32</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="cambiarAsiento(2);">3</a></td>
+			<td><a href="#" onclick="cambiarAsiento(6);">7</a></td>
+			<td><a href="#" onclick="cambiarAsiento(10);">11</a></td>
+			<td><a href="#" onclick="cambiarAsiento(14);">15</a></td>
+			<td><a href="#" onclick="cambiarAsiento(18);">19</a></td>
+			<td><a href="#" onclick="cambiarAsiento(22);">23</a></td>
+			<td><a href="#" onclick="cambiarAsiento(26);">27</a></td>
+			<td><a href="#" onclick="cambiarAsiento(30);">31</a></td>
+		</tr>
+		
+		<tr>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="cambiarAsiento(1);">2</a></td>
+			<td><a href="#" onclick="cambiarAsiento(5);">6</a></td>
+			<td><a href="#" onclick="cambiarAsiento(9);">10</a></td>
+			<td><a href="#" onclick="cambiarAsiento(13);">14</a></td>
+			<td><a href="#" onclick="cambiarAsiento(17);">18</a></td>
+			<td><a href="#" onclick="cambiarAsiento(21);">22</a></td>
+			<td><a href="#" onclick="cambiarAsiento(25);">26</a></td>
+			<td><a href="#" onclick="cambiarAsiento(29);">30</a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="cambiarAsiento(0);">1</a></td>
+			<td><a href="#" onclick="cambiarAsiento(4);">5</a></td>
+			<td><a href="#" onclick="cambiarAsiento(8);">9</a></td>
+			<td><a href="#" onclick="cambiarAsiento(12);">13</a></td>
+			<td><a href="#" onclick="cambiarAsiento(16);">17</a></td>
+			<td><a href="#" onclick="cambiarAsiento(20);">21</a></td>
+			<td><a href="#" onclick="cambiarAsiento(24);">25</a></td>
+			<td><a href="#" onclick="cambiarAsiento(28);">29</a></td>
+
+		</tr>
+	</table>
+	</div>
+	</td>
+	
+</body>
+</html>
